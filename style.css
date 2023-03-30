@@ -8,7 +8,7 @@
 body{
     height: 100vh;
     box-sizing: border-box;
-    background: linear-gradient(180deg, #222020,  black, black, black, black, black, black ,#121212);
+    background: linear-gradient(180deg, #101010, black, black, black, black, black, black ,black);
     color: #F6F6F6;
 }
 
@@ -78,6 +78,10 @@ a {
     border-radius: 10px;
 
 }
+
+#hr-apresentacao-projetos {
+    margin: 0 0 0px 0;
+}
         /*Troca de imagem*/
 
 /*img {
@@ -92,13 +96,14 @@ img:hover {
 */
 
 .projetos {
-    background: linear-gradient(180deg, #222020,black, black,  black, black, black, black, black, black,#252525);
+    background: linear-gradient(180deg,black, black, black, black, black, black, black, black,black, black, black,black, black,#181818);
 }
 
 .titulo-projetos {
     text-align: center;
     color: #22D4FD;
     margin: 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .section-projetos {
@@ -109,7 +114,7 @@ img:hover {
     border: #121212;
     border-radius: 20px;
     margin: 5% 3% 5% 3%;
-    box-shadow: 5px 5px 10px 3px #222020;
+    box-shadow: 1px 1px 10px 1px #222020;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,4 +158,49 @@ img:hover {
     margin: 38px 40px;
 }
 
-  
+footer {
+    background-color: #121212;
+}
+
+.section-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contato {
+    margin: 20px 150px 20px 0;
+}
+
+.footer-foto {
+    width: 12%;
+    border-radius: 200px;
+    margin: 40px 150px;
+}
+
+.texto-contato {
+    font-size: 40px;
+}
+
+.lista-contato {
+    list-style: none;
+    display:initial;
+    font-size: 20px;
+    padding: 0 320px 0 0;
+}
+
+.texto-footer {
+    font-size: 20px;
+    color: #ffffff85;
+    margin: 0 100px 0 0;
+}
+
+.texto-footer::after, .texto-footer::before {
+    width: 85%;
+    border-radius: 20px;
+    background: #262323;
+    margin: 20px auto;
+    height: 5px;
+    content: '';
+    display: block;
+}
