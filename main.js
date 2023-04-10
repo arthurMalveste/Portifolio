@@ -31,3 +31,24 @@ console.log(1 == true);
 // typeoff = perguntar para o js qual o tipo de dado esta sendo armazenado 
 
 console.log(typeof cidade);
+
+// conversão de tipos
+
+let numero1 = 234;
+let numero2 = "234";
+
+console.log(numero1 == numero2); //conversão automática //true
+
+console.log(numero1 + numero2); //"234234"
+console.log(numero1 + Number( numero2)); //conversão explícita //468
+
+let telefone = 12341234;
+console.log("O telefone é " + String(telefone)); // teremos a conversão do número 12341234 para uma string “12341234” e assim poderemos fazer a concatenação entre as strings
+
+
+// diferença somente quando testada no navegador
+console.log("deu erro");
+console.error("deu erro");
+
+// diferença de erro 
+console.error(new Error("deu erro"));

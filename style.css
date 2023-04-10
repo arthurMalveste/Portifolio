@@ -32,6 +32,22 @@ a {
     color: white;
 }
 
+.a-navbar::after, .a-navbar::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #262323;
+    display: block;
+    transition: 0.5s;
+  }
+
+.a-navbar:hover::after, .a-navbar:hover::before {
+    width: 100%;
+}
+
+.a-navbar:active {
+    transform: scale(0.93);
+}
 
 .titulo-destaque{
     color: #22D4FD;
@@ -42,9 +58,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .apresentacao__conteudo{
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .apresentacao__conteudo__titulo{
@@ -82,6 +102,11 @@ a {
 #hr-apresentacao-projetos {
     margin: 0 0 0px 0;
 }
+
+.apresentacao__links {
+    display: flex;
+    justify-content:space-evenly;
+}
         /*Troca de imagem*/
 
 /*img {
@@ -94,6 +119,50 @@ img:hover {
     box-shadow: 5px 5px 10px 3px #22D4FD;
 }
 */
+
+button {
+    width: 100%;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+.button-redes-sociais:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
+
+button img {
+    width: 40px;
+}
+
+#button-instagram {
+    padding: 18px 80px;}
+
+#button-github {
+    padding: 8px 80px;
+}
+
+#icone-github {
+    border: #101010;
+    width: 60px;
+    padding: 0 5px;
+}
+
+#icone-instagram {
+    padding-right: 10px;
+}
 
 .projetos {
     background: linear-gradient(180deg,black, black, black, black, black, black, black, black,black, black, black,black, black,#181818);
@@ -142,6 +211,7 @@ img:hover {
     border-radius: 20px;
 }
 
+
 #texto-sounds-key {
     margin-right: 20%;
 }
@@ -174,7 +244,7 @@ footer {
 
 .footer-foto {
     width: 12%;
-    border-radius: 200px;
+    border-radius: 50%;
     margin: 40px 150px;
 }
 
@@ -187,6 +257,10 @@ footer {
     display:initial;
     font-size: 20px;
     padding: 0 320px 0 0;
+}
+
+.li-contato {
+    margin: 5px;
 }
 
 .texto-footer {
@@ -204,3 +278,10 @@ footer {
     content: '';
     display: block;
 }
+
+.icones-redesSociais {
+    width: 5%;
+    padding: 10px 10px 0 0;
+}
+
+
