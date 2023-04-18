@@ -52,3 +52,25 @@ console.error("deu erro");
 
 // diferença de erro 
 console.error(new Error("deu erro"));
+
+
+//operação ternário
+let idadeMinima = 18;
+let idadeCliente = 16;
+
+if (idadeCliente >= idadeMinima ) {
+    console.log("pode beber")
+}
+else{
+    console.log("não pode beber")
+}
+
+//           condição                        true            false
+console.log(idadeCliente >= idadeMinima ? "pode beber" : "não pode beber" )
+
+//terminal literal
+const cidadeNatal = "sao paulo"
+const meuNome = "Arthur"
+
+const apresentacao = `oi meu nome é ${meuNome} e nasci na cidade de ${cidadeNatal}`
+console.log(apresentacao)

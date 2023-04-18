@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     height: 100vh;
     box-sizing: border-box;
@@ -30,6 +34,11 @@ li {
 a {
     text-decoration-line: none;
     color: white;
+    scroll-behavior: smooth;
+}
+
+a:target{
+    scroll-margin-top: .8em;
 }
 
 .a-navbar::after, .a-navbar::before {
@@ -127,6 +136,7 @@ button {
     justify-content: center;
     align-items: center;
     border: none;
+    color: #F6F6F6;
 
     text-transform: uppercase;
   transition: 0.5s;
